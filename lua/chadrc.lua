@@ -8,6 +8,7 @@ local M = {}
 M.base46 = {
 	theme = "kanagawa",
 
+    ---@diagnostic disable-next-line: missing-fields
 	 hl_override = {
 	 	Comment = { italic = true },
 	 	["@comment"] = { italic = true },

@@ -32,6 +32,8 @@ end
       Lua = {
         diagnostics = {
           globals = { "vim" },
+          undefined_global = false,
+          missing_parameters = false,
         },
         workspace = {
           library = {
