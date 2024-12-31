@@ -25,5 +25,10 @@ o.guifont = "monospace:h17"
 o.omnifunc = "v:lua.vim.lsp.omnifunc"
 o.clipboard = "unnamedplus"
 
+vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
+    pattern = "mason",
+    command = "hi Pmenu guibg=#262626 ctermbg=235"
+})
+
 -- o.cursorlineopt ='both' -- to enable cursorline!
 -- o.isfname:append("@-@")
